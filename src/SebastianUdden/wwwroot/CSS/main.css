@@ -1,0 +1,98 @@
+﻿.pageSpan {
+    width:100%;
+    max-height:100%;
+    min-height:98%;
+    margin-bottom:-2%;
+    overflow:hidden;
+}
+
+body {
+    font-family:'Segoe UI';
+    color:#7e7d7d;
+    font-size:medium;
+}
+
+.myContainer {
+    margin-top:2%;
+    height:7%;
+}
+
+.myNavContainer {
+    width:100%;
+    background-color:#e1d8d8;
+}
+
+.myBrand {
+    font-size:xx-large;
+    background-color:#e1d8d8 !important;
+}
+
+#myNavbarIcons li {
+    display: inline;
+    color:black;
+}
+
+a {
+    /*font-family:'Segoe WP SemiLight';*/
+    font-family:'Segoe UI';
+    color:#7e7d7d;
+    font-size:large;
+    text-decoration:none;
+    padding-top:2.3%;
+    padding-bottom:2.8%;
+    padding-right:1.5%;
+}
+
+a:hover {
+    color:#343434;
+    text-decoration:none;
+}
+
+a:focus {
+    color:#343434;
+    text-decoration:none;
+    background-color:#fcfcfc;
+}
+
+a:visited {
+    color:#343434;
+    text-decoration:none;
+    background-color:#fcfcfc;
+}
+
+.navSpace {
+    margin-right:10px !important;
+}
+
+.myView {
+
+}
+
+.myHeadline {
+    color:#4CAF50;
+}
+
+.myTable {
+    border-collapse:collapse;
+    width:100%;
+}
+
+.myTable th {
+    width:33.3%;
+}
+
+th, td {
+    text-align:left;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color:white;
+}
+
+.myFooter {
+    text-align:center;
+    height:2%;
+    margin-bottom:0;
+}
