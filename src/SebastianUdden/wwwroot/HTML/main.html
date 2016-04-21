@@ -1,16 +1,42 @@
 ﻿<div class="col-sm-6 col-sm-offset-3">
     <div class="row text-center">
         <div class="col-sm-2 col-sm-offset-5">
-            <h1>Main</h1>
+            <h1>Attributes</h1>
         </div>
     </div>
-    <div class="row text-center">
-        <h2 class="myHeadline" ng-mouseover="">Brainy</h2>
-        <div class="popover" ng-show="popoverIsVisible">I'm really smart!</div>
-        <h2 class="myHeadline">Creative</h2>
-        <h2 class="myHeadline">All-in</h2>
-        <h2 class="myHeadline">Disciplined</h2>
-        <h2 class="myHeadline">Quick</h2>
-
+    <div class="row">
+        <div class="col-sm-6 text-right">
+            <h2 class="myHeadline" ng-click="showBrainyDesc();" ng-mouseover="showBrainy(); hideCreative(); hideAllin(); hideDisciplined(); hideQuick()">Logical</h2>
+            <h2 class="myHeadline" ng-click="showCreativeDesc();" ng-mouseover="showCreative(); hideBrainy(); hideAllin(); hideDisciplined(); hideQuick()">Creative</h2>
+            <h2 class="myHeadline" ng-click="showAllinDesc();" ng-mouseover="showAllin(); hideBrainy(); hideCreative(); hideDisciplined(); hideQuick()">Dedicated</h2>
+            <h2 class="myHeadline" ng-click="showDisciplinedDesc();" ng-mouseover="showDisciplined(); hideBrainy(); hideCreative(); hideAllin(); hideQuick()">Disciplined</h2>
+            <h2 class="myHeadline" ng-click="showQuickDesc();" ng-mouseover="showQuick(); hideBrainy(); hideCreative(); hideAllin(); hideDisciplined();">Quick</h2>
+        </div>
+        <div class="col-sm-6 text-left">
+            <h2 class="mySubtext" ng-show="brainyPop" ng-mouseover="showBrainyDesc();">I'm pretty smart!</h2>
+            <div class="mySubSubtext" ng-show="brainyDescPop">I've scored high on several logical tests, one provided a scholarship for a college in New York, another test made me one of 30 among 4000 applicants to get into the Accelerated Learning Program at Academic Work Academy.</div>
+            <h2 class="myHiddentext" ng-show="creativePop">.</h2>
+            <h2 class="mySubtext" ng-show="creativePop" ng-mouseover="showCreativeDesc();">I've made some cool stuff!</h2>
+            <div class="mySubSubtext" ng-show="creativeDescPop">Look at my portfolio to see some of the things I've created.</div>
+            <h2 class="myHiddentext" ng-show="allinPop">.</h2>
+            <h2 class="myHiddentext" ng-show="allinPop">.</h2>
+            <h2 class="mySubtext" ng-show="allinPop" ng-mouseover="showAllinDesc();">I focus a 100% on the tasks I'm given!</h2>
+            <div class="mySubSubtext" ng-show="allinDescPop">Constantly looking at how to solve problems, I dive into the challenge with full dedication and relentless ambition.</div>
+            <h2 class="myHiddentext" ng-show="disciplinedPop">.</h2>
+            <h2 class="myHiddentext" ng-show="disciplinedPop">.</h2>
+            <h2 class="myHiddentext" ng-show="disciplinedPop">.</h2>
+            <h2 class="mySubtext" ng-show="disciplinedPop" ng-mouseover="showDisciplinedDesc();">I'm self-organizing and structured!</h2>
+            <div class="mySubSubtext" ng-show="disciplinedDescPop">I've worked as my own boss and can optimize my workflow without supervision. On top of that I love problem-solving and the challenges that can be found working as a developer.</div>
+            <h2 class="myHiddentext" ng-show="quickPop">.</h2>
+            <h2 class="myHiddentext" ng-show="quickPop">.</h2>
+            <h2 class="myHiddentext" ng-show="quickPop">.</h2>
+            <h2 class="myHiddentext" ng-show="quickPop">.</h2>
+            <h2 class="mySubtext" ng-show="quickPop" ng-mouseover="showQuickDesc();">My keyboardskills are awesome!</h2>
+            <div class="mySubSubtext" ng-show="quickDescPop">I write a lot of code and I've also worked, highly efficiently, with transcribing letters to digital form.</div>
+        </div>
     </div>
+    <br />
+    <hr />
+    <br />
+    
 </div>

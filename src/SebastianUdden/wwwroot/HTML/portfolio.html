@@ -7,4 +7,44 @@
     <div class="row">
         <p style="text-align:center">This page was built using MVC, ASP.NET, AngularJS, JavaScript, HTML5, CSS3 and Bootstrap</p>
     </div>
+    <hr />
+    <div class="row">
+        <h2>Search skills</h2>
+    </div>
+    <input type="checkbox" ng-click="queryType()" />
+    <input type="checkbox" ng-click="queryBackground()" />
+    <input type="checkbox" ng-click="queryExperience()" />
+    <!--searchquery.type-->
+    <form role="form" style="width:30%;">
+        <div class="input-group">
+            <input type="text" class="form-control input-group-sm" style="margin-left:0;background-color:rgba(255, 255, 255, 0.36);font-size:large;" ng-model="{{query}}" placeholder="Search" />
+            <span class="input-group-btn">
+                <button class="btn btn-info" type="submit" style="height:34px; color:#3f3f3f; background-color:rgba(255, 255, 255, 0.36); border-color:#d0c9c9">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+    </form>
+    <div class="row">
+        <table ng-repeat="skill in skills | filter:searchquery" width="100%">
+            <tr>
+                <th>{{ skill.type }}</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td width="30%">Background</td>
+                <td>{{ skill.background }}</td>
+            </tr>
+            <tr>
+                <td width="30%">Experience</td>
+                <td>{{ skill.experience }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </div>

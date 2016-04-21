@@ -1,13 +1,14 @@
 ﻿<div class="pageSpan">
-    <div class="myNavContainer">
-        <div class="row myContainer">
-            <div class="col-sm-2 col-sm-offset-1" style="margin-top:0.5%;">
+    <div class="row" style="margin-bottom:2%"></div>
+    <div class="row">
+        <div class="row myNavContainer">
+            <div class="col-sm-2 col-sm-offset-1" style="margin-top:0.4%;">
                 <a class="myBrand" href="#/">Sebastian Uddén</a>
             </div>
-            <div class="col-sm-6 col-sm-offset-1" style="margin-top:1%;">
+            <div class="col-sm-6 col-sm-offset-1" style="margin-top:1.1%;">
                 <ul id="myNavbarIcons">
-                    <li><a href="#/"><span class="glyphicon glyphicon-home" style="margin-right:0.5%; margin-left:1%;"></span>Home</a></li>
-                    <li><a href="#/about"><span class="glyphicon glyphicon-user" style="margin-right:0.5%; margin-left:1%;"></span>About</a></li>
+                    <li><a href="#/"><span class="glyphicon glyphicon-user" style="margin-right:0.5%; margin-left:1%;"></span>5 Attributes</a></li>
+                    @*<li><a href="#/about"><span class="glyphicon glyphicon-user" style="margin-right:0.5%; margin-left:1%;"></span>About</a></li>*@
                     <li><a href="#/resume"><span class="glyphicon glyphicon-book" style="margin-right:0.5%; margin-left:1%;"></span>Resumé</a></li>
                     <li><a href="#/skills"><span class="glyphicon glyphicon-screenshot" style="margin-right:0.5%; margin-left:1%;"></span>Skills</a></li>
                     <li><a href="#/portfolio"><span class="glyphicon glyphicon-briefcase" style="margin-right:0.5%; margin-left:1%;"></span>Portfolio</a></li>
@@ -15,24 +16,14 @@
                 </ul>
             </div>
             <div class="col-sm-2 col-sm-pull-1" style="margin-top:0.7%;">
-                <form role="form" style="width:80%">
-                    <div class="input-group">
-                        <input type="text" class="form-control input-group-sm" style="background-color:rgba(255, 255, 255, 0.36);font-size:large;" ng-model="message" placeholder="Search" />
-                        <span class="input-group-btn">
-                            <button class="btn btn-info" type="submit" style="height:34px; color:#3f3f3f; background-color:rgba(255, 255, 255, 0.36); border-color:#d0c9c9">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </button>
-                        </span>
-                    </div>
-                </form>
+                
             </div>
         </div>
     </div>
-    <div class="row" style="margin-top:1%;">
+    <div id="myContent" class="row">
         <div ng-view></div>
     </div>
+    <div id="myFooter" class="row">
+        <p>Hire me, you'll love the results!</p>
+    </div>
 </div>
-
-<footer class="myFooter">
-    <p>Hire me, you'll love the results!</p>
-</footer>

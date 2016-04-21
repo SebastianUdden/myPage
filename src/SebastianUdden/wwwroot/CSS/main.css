@@ -1,23 +1,33 @@
 ﻿.pageSpan {
     width:100%;
-    max-height:100%;
-    min-height:98%;
-    margin-bottom:-2%;
-    overflow:hidden;
+    min-height:100%;
+    position:relative;
 }
 
 body {
+    height:100%;
     font-family:'Segoe UI';
     color:#7e7d7d;
     font-size:medium;
+    margin:0 auto;
+    padding:0;
 }
 
-.myContainer {
-    margin-top:2%;
-    height:7%;
+#myContent {
+    padding-bottom:5%;
+}
+
+#myFooter {
+    text-align:center;
+    height:5%;
+    width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
 }
 
 .myNavContainer {
+    height:7%;
     width:100%;
     background-color:#e1d8d8;
 }
@@ -30,6 +40,16 @@ body {
 #myNavbarIcons li {
     display: inline;
     color:black;
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+    padding-right:0.1%;
+    transition: box-shadow .2s ease-in-out;
+    -moz-transition: box-shadow .2s ease-in-out;
+    -webkit-transition: box-shadow .2s ease-in-out;
+}
+
+#myNavbarIcons li:hover {
+    box-shadow:1.2px 0.8px 0.5px #999898;
 }
 
 a {
@@ -38,13 +58,13 @@ a {
     color:#7e7d7d;
     font-size:large;
     text-decoration:none;
-    padding-top:2.3%;
+    padding-top:2.4%;
     padding-bottom:2.8%;
     padding-right:1.5%;
 }
 
 a:hover {
-    color:#343434;
+    color:rgba(52, 52, 52, 0.54) !important;
     text-decoration:none;
 }
 
@@ -65,11 +85,42 @@ a:visited {
 }
 
 .myView {
+}
 
+.myBigHeader {
+    color:#4a4848;
 }
 
 .myHeadline {
-    color:#4CAF50;
+    color:#414481;
+}
+
+.myHeadline:hover {
+    color:rgba(65, 68, 129, 0.57);
+    cursor:pointer;
+}
+
+.mySubtext {
+    
+}
+
+.mySubSubtext {
+    transition: box-shadow .2s ease-in-out;
+    -moz-transition: box-shadow .2s ease-in-out;
+    -webkit-transition: box-shadow .2s ease-in-out;
+    padding:10px;
+    background-color:#e1d8d8;
+    border-color:#7e7d7d;
+    border-radius:6px;
+    box-shadow:2px 2px 1px #a5a5a5;
+}
+
+.mySubSubtext:hover {
+    box-shadow:3px 3px 1.5px #a5a5a5;
+}
+
+.myHiddentext {
+    color:rgba(0, 0, 0, 0.00)
 }
 
 .myTable {
@@ -87,12 +138,12 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #414481;
     color:white;
 }
 
-.myFooter {
-    text-align:center;
-    height:2%;
-    margin-bottom:0;
+.popover {
+    position:absolute;
+    z-index:100;
 }
+
