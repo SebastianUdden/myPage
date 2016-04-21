@@ -57,111 +57,86 @@
         $scope.quickDescPop = true;
     };
 
-    $scope.queryType = function () {
-        $scope.query = "searchquery.type";
-    };
-    $scope.queryBackground = function () {
-        $scope.query = "searchquery.background";
-    };
-    $scope.queryExperience = function () {
-        $scope.query = "searchquery.experience";
-    };
-
     $scope.skills = [
     {
-        "background": "16",
         "type": "C#",
-        "experience": "SW"
+        "background": "I've used C# extensively since getting into the Accelerated Learning Program at Academic Work Academy, building a variety of programs. For example I've created a battleship game, a poker playing app and a music app allowing users to play instruments in real time over the local network.",
     },
     {
-        "background": "18",
         "type": ".NET",
-        "experience": "DW"
+        "background": "This is the framework that I've used the most of all. Being the essential part of the syllabus at Academic Work Academy, I've had the pleasure to practice my .NET-skills under some great teachers.",
     },
     {
-        "background": "18",
         "type": "ASP.NET",
-        "experience": "DW"
+        "background": "This is a framework that I use for all things web. By applying ASP.NET, and MVC in extension, as a foundation I create a strong baseline on the server-side.",
     },
     {
-        "background": "18",
         "type": "SQL",
-        "experience": "DW"
+        "background": "Database management with SQL is something that I've come to enjoy more and more. We've had an exceptional teacher at Academy talking about the ins-and-outs of databases.",
     },
     {
-        "background": "18",
         "type": "Microsoft SQL Server",
-        "experience": "DW"
+        "background": "Microsoft SQL Server was the primary tool for database management during my studies.",
     },
     {
-        "background": "18",
         "type": "AngularJS",
-        "experience": "DW"
+        "background": "AngularJS is a javascript framework I really enjoy working with. It was not covered at all during our education and I've since been making learning it my evening activity.",
     },
     {
-        "background": "18",
         "type": "Node.js",
-        "experience": "DW"
+        "background": "Node.js is javascript on the server side and a lot of fun!",
     },
     {
-        "background": "18",
         "type": "MongoDB",
-        "experience": "DW"
+        "background": "MongoDB is something I'm just now starting to look at, an interesting take on databases and a great way to work with javascript through the whole stack.",
     },
     {
-        "background": "18",
         "type": "MVC",
-        "experience": "DW"
+        "background": "MVC is my staple web-foundation. It was the focus of the later half of the Accelerated Learning Program. I've created tons of MVC-projects and use them as a launching pad for all things front-end.",
     },
     {
-        "background": "18",
         "type": "JavaScript",
-        "experience": "DW"
+        "background": "JavaScript was touched upon lightly during the course but I've been using it extensively and looked at ways to integrate it more through AngularJS, Node.js and MongoDB.",
     },
     {
-        "background": "18",
         "type": "Sublime",
-        "experience": "DW"
+        "background": "Sublime is my go to software when it comes to light web-development and scripting.",
     },
     {
-        "background": "18",
         "type": "Xcode",
-        "experience": "DW"
+        "background": "I've used Xcode to create simpler apps for iOS.",
     },
     {
-        "background": "18",
+        "type": "Objective-C",
+        "background": "I've created som simpler apps using Objective-C, one of which was used to calculate different measurements.",
+    },
+    {
         "type": "Bootstrap",
-        "experience": "DW"
+        "background": "Bootstrap is a great framework for handling mobile adaptation of web-applications. I use it everyday!",
     },
     {
-        "background": "18",
         "type": "Brackets",
-        "experience": "DW"
+        "background": "Brackets is an IDE that works great for live-previewing client-side changes when developing.",
     },
     {
-        "background": "18",
         "type": "CSS",
-        "experience": "DW"
+        "background": "I use CSS/CSS3 everyday and continue to develop my skills in making the front-end look as good as possible.",
     },
     {
-        "background": "18",
         "type": "Unity",
-        "experience": "DW"
+        "background": "Unity is a game engine that I've used to create some games with a C# base. I've been in contact with it through my previous work with audio as well.",
     },
     {
-        "background": "18",
         "type": "Blueprint Visual Scripting",
-        "experience": "DW"
+        "background": "Blueprint Visual Scripting is an interesting language developed by the people over at Epic Games. It was my first foray into programming coming from an audio background and it was a very visual way to depict code and it's dependencies.",
     },
     {
-        "background": "18",
         "type": "HTML",
-        "experience": "DW"
+        "background": "HTML and HTML5 is such an obvious language that it doesn't require much background. I use it all the time, period.",
     },
     {
-        "background": "18",
         "type": "Unreal Engine",
-        "experience": "DW"
+        "background": "Unreal Engine is really the first in depth contact I had with programming, and even though I've since moved on to lower level coding I still enjoy it and the possibilites it opens for working with audio, graphics and game content combined.",
     },
     ]
 }]);
