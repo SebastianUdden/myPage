@@ -1,7 +1,9 @@
 ﻿myApp.controller('myCtrl', ['$scope', '$log', function ($scope, $log) {
+    // #region OriginalVariables
     $scope.name = 'Sebastian';
     $scope.searchquery = '';
-
+    // #endregion
+    // #region ShowHidePops
     $scope.showBrainy = function () {
         $scope.brainyPop = true;
     };
@@ -56,7 +58,8 @@
     $scope.showQuickDesc = function () {
         $scope.quickDescPop = true;
     };
-
+    // #endregion
+    // #region MySkills
     $scope.skills = [
     {
         "type": "C#",
@@ -139,4 +142,5 @@
         "background": "Unreal Engine is really the first in depth contact I had with programming, and even though I've since moved on to lower level coding I still enjoy it and the possibilites it opens for working with audio, graphics and game content combined.",
     },
     ]
+    // #endregion
 }]);

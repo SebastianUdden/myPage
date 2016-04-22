@@ -2,7 +2,7 @@
 
 myApp.config(function ($routeProvider) {
     $routeProvider
-
+    // #region Routing
     .when('/', {
         templateUrl: 'html/main.html',
         controller: 'myCtrl'
@@ -32,4 +32,5 @@ myApp.config(function ($routeProvider) {
         templateUrl: 'html/contact.html',
         controller: 'myCtrl'
     });
+    // #endregion
 });
